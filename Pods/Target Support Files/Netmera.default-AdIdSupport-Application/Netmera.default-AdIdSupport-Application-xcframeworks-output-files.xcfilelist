@@ -1,0 +1,3 @@
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Netmera/AdIdSupport/NetmeraAdId.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Netmera/Application/Netmera.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Netmera/Core/NetmeraCore.framework

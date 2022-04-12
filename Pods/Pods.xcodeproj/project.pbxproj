@@ -1,0 +1,2187 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		30AA99B82B78581E0A4BA86433BDA11D /* Netmera-NotificationContentExtension */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = EFD9637E4D5780674A31E0175FD1613D /* Build configuration list for PBXAggregateTarget "Netmera-NotificationContentExtension" */;
+			buildPhases = (
+				D53047FFE3D3085CE668D64C92A920A4 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				9F723C02644D488DB1EE16D5F04B3983 /* PBXTargetDependency */,
+			);
+			name = "Netmera-NotificationContentExtension";
+		};
+		AA9097157A0758E208105E2481988CBB /* Netmera-NotificationServiceExtension */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CC62FEB83A62AA108272AA072EFD477D /* Build configuration list for PBXAggregateTarget "Netmera-NotificationServiceExtension" */;
+			buildPhases = (
+				F20DA5DB41637FDE4B3FFA6D25852947 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = "Netmera-NotificationServiceExtension";
+		};
+		DA9DC677E1F077B945DAEBF7A8BFCF27 /* Netmera.default-AdIdSupport-Application */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 000CB9DB05CDFB02EA7E967FEA2F882F /* Build configuration list for PBXAggregateTarget "Netmera.default-AdIdSupport-Application" */;
+			buildPhases = (
+				7F73288840898C1B40317AFFD854C681 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				F66E4AB9D6CABB6AE09E9FF598C0C0DA /* PBXTargetDependency */,
+				31228CFE8A2817305C879F2DB72A4DD4 /* PBXTargetDependency */,
+				808B8B4B302D82EAFD1147236170DEBF /* PBXTargetDependency */,
+				01479572256CF10A45955BD65552FA54 /* PBXTargetDependency */,
+			);
+			name = "Netmera.default-AdIdSupport-Application";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		02DAE095E43D598F39C00701E62CA242 /* MMWormholeFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AB45FEE68E1463435F35A0F4DA7932 /* MMWormholeFileTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		07244C2EC82FF1901C6EE8163C2D3BBB /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A90F5A83DD8AD72809F1F94F1F9DFF /* AFHTTPSessionManager.m */; };
+		077C0927BC236DB8E780A0633B43AEAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C207DC62B786AFF2D3324869EB37523 /* Foundation.framework */; };
+		0876EF674D2AC9EB649D15765CACF38A /* MMWormholeSessionContextTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9173C5BE78192203D59A988F666303 /* MMWormholeSessionContextTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0BA5E63724842DB3DC18163244FAA9DC /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = F3CD2F3D8ED7475167EE1202CB1D154E /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E3B686812CF3AD864EEE1C5A3B3228B /* Pods-MyNetmeraContentExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 288E28F4C118C05CBE210A0662C27BBC /* Pods-MyNetmeraContentExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10DC2E761FD8240755CB4D44AD848B3C /* MMWormholeSessionFileTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = C86BF096ADFBBD2BB5ACC6CF3EEE8F08 /* MMWormholeSessionFileTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		145EAECCCD3637C051D305ED3B87967C /* MMWormholeSessionMessageTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = C41F7D71204B083514BBF6C7B1E1F84B /* MMWormholeSessionMessageTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		176F8093A462DA87177AE2DC38C74F3A /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA54012B10B5D6B72728F14B150AF0D /* FMDB-dummy.m */; };
+		1A04CBBDB395C07ADA7AA086722A044C /* Pods-NetmeraiOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A580DE566A599B2A57B14384C6A1D3 /* Pods-NetmeraiOS-dummy.m */; };
+		1E82F834D1867575327C749E304E5717 /* MMWormholeTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = F1BC0119B6F5641F9C1C401D52627B26 /* MMWormholeTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24CA5241C775CE3C9E9DF46D10859EAA /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B3D7B9940253FA1A96C4343945CE680E /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A1794D99E095EBCAFF11F5F4DA888A2 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B46E43A5B8E2F2EB476D787B7E72982 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		321740FBD1C89969CA16BD264D6D1FDD /* MMWormholeSessionFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = F6673853929E78043D4372C833B4B227 /* MMWormholeSessionFileTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		32B7E25EECD5D8CD154A0F6263A8EB4F /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = AD577F10734051B73972A700B0FCE5B5 /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A8289DD1509BF5086A0381D7BE5DCD0 /* MMWormholeFileTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 35BF657FCA03D52EEF3955BC89D0EA7A /* MMWormholeFileTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D95C188F70F7891301A933272D946AB /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D9E5D36CE867DEE627DBA9EA11CC22 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DBA048E4393215EB2720A89AC7ADAB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C207DC62B786AFF2D3324869EB37523 /* Foundation.framework */; };
+		3EB06038EA8B2F16AA51FF27905876A7 /* FMDB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 94345362E8292C01325DBADBC4E86472 /* FMDB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4585CF5705D4E00C8B158BE074FA1BF6 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC5AB264D634CBF979BA8E6788ED617 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		50E8F0C3B35A252B0AADD9B3DD88603F /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 23EA204EE6C500F067F25B3B37C7820C /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		512DE25F9DA68F9DACDF62D66C64DE28 /* Pods-MyNetmeraNotificationServiceExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F8EDB08AA9A6E3183394BF02328DF9F /* Pods-MyNetmeraNotificationServiceExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54C7FF0FF6977C7E9E6B8EAC63AF9712 /* UICKeyChainStore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9902C19738AF7F9A4A7304C3129ED179 /* UICKeyChainStore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58D385B7DBB612B6A3A06EA670C015F1 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 775277B9629F2CF9000160D1C00B1EFD /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D67B8B884C03E2F40DF8D5A6EA28B35 /* UICKeyChainStore.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0098546928F885ABBC9FA4684C5521 /* UICKeyChainStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DB24234F3E84F7DD0AF80D84E43DF63 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDE25AF72D99268B7AD742D4AD7600 /* AFURLRequestSerialization.m */; };
+		5F29492846530A428B1198F7A167EA91 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 8940B459824E8E046B256A280792E65B /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61A1136637848E05B3CF71EAD63F0487 /* MMWormholeSessionMessageTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 45777505B7E142352F258377167B863D /* MMWormholeSessionMessageTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73C10CDFEAC1F11878A7B3AD41B9907C /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8A8296DB6936C3584199433D11555C /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		77BFEC0CB11BC106F2C8251E2E5D8578 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B1266779A0FA34FEDC5F3F7A0496AE /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7D10DE887260B50F9E14120146CB52CE /* Pods-MyNetmeraContentExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 893D4E1D92C9F5DD77A7D141F419267C /* Pods-MyNetmeraContentExtension-dummy.m */; };
+		802847C45D827FDC0AC71A91C6B4F76C /* MMWormholeCoordinatedFileTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D50830B6E9FAA2856CCF3639F10F576 /* MMWormholeCoordinatedFileTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80C0803B7CCF495A4D2D32BAE6911EB0 /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = E8401B8ED16CD5BDEC98F804C1EC7035 /* MMWormhole.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8246D862087C7890593899AEA5898697 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA1A09D59C0C4B69A5812780F55D988 /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84C4AB9335E17FF66B11A4AF950EFDDF /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C173E59F74309AB50FB0962EC13191 /* AFNetworking-dummy.m */; };
+		8FA59698D8E0940C6A785C92D2325664 /* MMWormhole-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92383360BDA82848D09D230055F19492 /* MMWormhole-dummy.m */; };
+		8FC5684C4684961A4B867842E66D7798 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = AF529EED34310FA411269192E83AB461 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		98115BC6B817E99BB0723648ED089353 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1157BD27767001E137F3B859D549C129 /* WatchConnectivity.framework */; };
+		9932149C6B9001A8A4D73D50F682E35A /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 04142AF56F178B7185D94E4C98977D83 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E2298CE217BFD2BC214B2A23996A792 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BF652894E818FDA6A24FC4D77B1FB3 /* AFNetworkReachabilityManager.m */; };
+		A275AF26282712C0EE744A90F9CA52C7 /* MMWormholeSessionContextTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BAA6D53BFFEC4C80208341F981CA840 /* MMWormholeSessionContextTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAFB570CF7637FCB8CC2F9C3B81109AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C207DC62B786AFF2D3324869EB37523 /* Foundation.framework */; };
+		B12342B7665D8F0E5C8E4142FBC7CE69 /* MMWormhole.h in Headers */ = {isa = PBXBuildFile; fileRef = DA62AA300B225279A70D7BDF3A1A9B11 /* MMWormhole.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B17FB7B7C212BFB8C795C9E8ECB11F92 /* Pods-NetmeraiOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D054898EF6076261D825743B6E5DB50 /* Pods-NetmeraiOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B581E514917B38AA7D828E1C108FFC59 /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FF017256AE8A3FF38A62A48A33E0D25 /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B69B9F0498E101358AA636FB3C9DE1FF /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = B47A57152728032711613A795BEC6EAF /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8E9D06DC51EC50FD682E9678F8AE43D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C207DC62B786AFF2D3324869EB37523 /* Foundation.framework */; };
+		BCF966A242F1A37245EB58A12267EEC8 /* MMWormholeSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 866D3AAC007E10164D1B9DEC873DCF17 /* MMWormholeSession.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C2E184CEA034F331A8E8EDAE78DEC3B4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3428525A34C6F4E20C7B981D501EF9C5 /* Security.framework */; };
+		C86538A68F0BBD857A7033C12BB4ECBC /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6F5682AEF2CC15EECAA1C187460392 /* AFSecurityPolicy.m */; };
+		CD3B4CEE42DB4A796155E9B1E22FECCB /* MMWormholeCoordinatedFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 685348A688CD5273D5A8F88A9C67A792 /* MMWormholeCoordinatedFileTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D05E2424317DDE6F2C47C7A171394CDB /* MMWormhole-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E87FF0DFE38A59B879B4F7512AF03714 /* MMWormhole-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2254DA384ACC0F97A2E34EE76CC6CCB /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EF61C8E5A0C4A42DC7DC349D9894DA /* AFURLSessionManager.m */; };
+		D820795BCA0F0F2013C614D61CF76699 /* Pods-MyNetmeraNotificationServiceExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D5415440FB57634EC378830578536A /* Pods-MyNetmeraNotificationServiceExtension-dummy.m */; };
+		DB0A56B96FBD402357D913EE17DD69DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C207DC62B786AFF2D3324869EB37523 /* Foundation.framework */; };
+		DEE40D70752AFFE77E738C1459DB990C /* MMWormholeSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 13347DE4E94790B6ED0CBF7741689080 /* MMWormholeSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E025BA6BFD719C33ACC54F5100425721 /* AFCompatibilityMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 83320C4475696D2A413E4D3D93A84FC7 /* AFCompatibilityMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E05884CFA6BF7E1F20BE3EA4BF9D6EF2 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CBDFE1001FDC51CFFB60C668ED203E /* AFURLResponseSerialization.m */; };
+		E4B105C092E6057E5125364DEFD27344 /* UICKeyChainStore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F5354D86E2AB019D1B3BA91B334D65 /* UICKeyChainStore-dummy.m */; };
+		E5A6AC605ED8BBC2B576760BCA72022F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C207DC62B786AFF2D3324869EB37523 /* Foundation.framework */; };
+		EEC769F2E68ED023B1B1E151E68F9386 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C207DC62B786AFF2D3324869EB37523 /* Foundation.framework */; };
+		EFBCD5F499464C4A8042EBCFAB4ACC1A /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC989D9C374E51430125B569F265EA8 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F16C671DF9A50B2DB970244B51C22DAD /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = DF31AC767AD4C7361BD54D120219068C /* UICKeyChainStore.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F3959A6F13D70E595F272F07FB8B00BD /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 840EC41E6591DAC79AF8C5026B03C438 /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06D864B928EA4125EA6F96408897E468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA9097157A0758E208105E2481988CBB;
+			remoteInfo = "Netmera-NotificationServiceExtension";
+		};
+		1281D869E17D6E248C1011E3A738823A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA9DC677E1F077B945DAEBF7A8BFCF27;
+			remoteInfo = "Netmera.default-AdIdSupport-Application";
+		};
+		24EF0C8DE09FC2B6946E60D529181E57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7406ECC476A62C8FA502AD0E8D1240BE;
+			remoteInfo = UICKeyChainStore;
+		};
+		2B2D0657CC0E9D08E36DA1C036A85711 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8592E0E389D40AC17881400ADC67ABC0;
+			remoteInfo = FMDB;
+		};
+		4D5FDE3ED287FE8F34AA1D39A68FB651 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30AA99B82B78581E0A4BA86433BDA11D;
+			remoteInfo = "Netmera-NotificationContentExtension";
+		};
+		5941F7CAC04684627072E13282978CDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E37C8494356B2F3F48E654AC46CD6824;
+			remoteInfo = MMWormhole;
+		};
+		5D38EEB0A3C1D0C1D8F0562C7A266EAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7406ECC476A62C8FA502AD0E8D1240BE;
+			remoteInfo = UICKeyChainStore;
+		};
+		A5C40DEE1AB95B7A32B0CA45C43B65B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
+			remoteInfo = AFNetworking;
+		};
+		C5BDB5ADEA6FB263C80C8B72C2C1BCC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
+			remoteInfo = AFNetworking;
+		};
+		C5BEDE264E5B1F6A4CC841338E684E50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA9097157A0758E208105E2481988CBB;
+			remoteInfo = "Netmera-NotificationServiceExtension";
+		};
+		DB0A7D7DF42AC6E24688DD5A46CBF6E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E37C8494356B2F3F48E654AC46CD6824;
+			remoteInfo = MMWormhole;
+		};
+		E3D2400B709D1982D7B86E9C1BDEFEC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30AA99B82B78581E0A4BA86433BDA11D;
+			remoteInfo = "Netmera-NotificationContentExtension";
+		};
+		E50BB9505FA7E6AED9CF5AEB13A1127F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E37C8494356B2F3F48E654AC46CD6824;
+			remoteInfo = MMWormhole;
+		};
+		F6E859F016134F4D9920CD41522A7AFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E37C8494356B2F3F48E654AC46CD6824;
+			remoteInfo = MMWormhole;
+		};
+		F78B1734790BA5FBD31A609C5A51744A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8592E0E389D40AC17881400ADC67ABC0;
+			remoteInfo = FMDB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04142AF56F178B7185D94E4C98977D83 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		04CD9E128E239AB55E5C87AA6C839266 /* NetmeraAdId.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = NetmeraAdId.xcframework; sourceTree = "<group>"; };
+		057D2D133662654CFA1062CF660D0207 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
+		07C173E59F74309AB50FB0962EC13191 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		090C4DE575D9CED17649D5E3ABE44A8E /* Pods-MyNetmeraNotificationServiceExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyNetmeraNotificationServiceExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0B30050A4007593DB6466EEC5D47F6D6 /* FMDB-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FMDB-Info.plist"; sourceTree = "<group>"; };
+		0BEA8230D9BAC581BAE63B12DFE6FB9E /* Pods-MyNetmeraNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyNetmeraNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		0F8EDB08AA9A6E3183394BF02328DF9F /* Pods-MyNetmeraNotificationServiceExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyNetmeraNotificationServiceExtension-umbrella.h"; sourceTree = "<group>"; };
+		1157BD27767001E137F3B859D549C129 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		120D29C7149843A34B63C05511FFA4B3 /* Netmera-NotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Netmera-NotificationServiceExtension.debug.xcconfig"; path = "../Netmera-NotificationServiceExtension/Netmera-NotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		13347DE4E94790B6ED0CBF7741689080 /* MMWormholeSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeSession.h; path = Source/MMWormholeSession.h; sourceTree = "<group>"; };
+		13DD680F7C137A236F85941185707ED8 /* Netmera.default-AdIdSupport-Application.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Netmera.default-AdIdSupport-Application.release.xcconfig"; path = "../Netmera.default-AdIdSupport-Application/Netmera.default-AdIdSupport-Application.release.xcconfig"; sourceTree = "<group>"; };
+		15ADEBD29C73B374AC41E2377C99C8BC /* UICKeyChainStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICKeyChainStore.debug.xcconfig; sourceTree = "<group>"; };
+		17A3CDD3B9562B801827AC76B761106F /* Pods-NetmeraiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NetmeraiOS.release.xcconfig"; sourceTree = "<group>"; };
+		1B51FA2945AA1C3023835FD0D036A6F0 /* Pods-NetmeraiOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NetmeraiOS-frameworks.sh"; sourceTree = "<group>"; };
+		1D50830B6E9FAA2856CCF3639F10F576 /* MMWormholeCoordinatedFileTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeCoordinatedFileTransiting.h; path = Source/MMWormholeCoordinatedFileTransiting.h; sourceTree = "<group>"; };
+		1D878544223D80675362ECD9DD639E96 /* Netmera.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = Netmera.xcframework; sourceTree = "<group>"; };
+		1FF017256AE8A3FF38A62A48A33E0D25 /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
+		23B1266779A0FA34FEDC5F3F7A0496AE /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		23B2EFD1DFA1CA2CCC256D9E77B00C01 /* NetmeraCore.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = NetmeraCore.xcframework; sourceTree = "<group>"; };
+		23EA204EE6C500F067F25B3B37C7820C /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		23F5354D86E2AB019D1B3BA91B334D65 /* UICKeyChainStore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICKeyChainStore-dummy.m"; sourceTree = "<group>"; };
+		24AB084D7E73A5F62CBD60D7B8A4CA43 /* Pods-MyNetmeraNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyNetmeraNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		27370B588198EFB180F0B9A70DBC599C /* MMWormhole.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMWormhole.release.xcconfig; sourceTree = "<group>"; };
+		288E28F4C118C05CBE210A0662C27BBC /* Pods-MyNetmeraContentExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyNetmeraContentExtension-umbrella.h"; sourceTree = "<group>"; };
+		2B2608B23EE3F556BEB7DE1F4321AE96 /* Pods-MyNetmeraContentExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyNetmeraContentExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		2B46E43A5B8E2F2EB476D787B7E72982 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		2DDC7E28507C20C449F3FB37701023A0 /* Pods-MyNetmeraContentExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyNetmeraContentExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2FA1A09D59C0C4B69A5812780F55D988 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
+		3160E8541ACDD8A9C7709EDF51969B04 /* MMWormhole.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMWormhole.debug.xcconfig; sourceTree = "<group>"; };
+		31AB45FEE68E1463435F35A0F4DA7932 /* MMWormholeFileTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeFileTransiting.m; path = Source/MMWormholeFileTransiting.m; sourceTree = "<group>"; };
+		3428525A34C6F4E20C7B981D501EF9C5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		34EF61C8E5A0C4A42DC7DC349D9894DA /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		35BF657FCA03D52EEF3955BC89D0EA7A /* MMWormholeFileTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeFileTransiting.h; path = Source/MMWormholeFileTransiting.h; sourceTree = "<group>"; };
+		3B6F5682AEF2CC15EECAA1C187460392 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		45777505B7E142352F258377167B863D /* MMWormholeSessionMessageTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeSessionMessageTransiting.h; path = Source/MMWormholeSessionMessageTransiting.h; sourceTree = "<group>"; };
+		4BDB4E1529F15F38AE172A78ADC96B7E /* Netmera.default-AdIdSupport-Application-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; name = "Netmera.default-AdIdSupport-Application-xcframeworks.sh"; path = "../Netmera.default-AdIdSupport-Application/Netmera.default-AdIdSupport-Application-xcframeworks.sh"; sourceTree = "<group>"; };
+		4FC989D9C374E51430125B569F265EA8 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		501A08007BA1E987512CCB0784225D02 /* Pods-MyNetmeraNotificationServiceExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MyNetmeraNotificationServiceExtension.modulemap"; sourceTree = "<group>"; };
+		51A580DE566A599B2A57B14384C6A1D3 /* Pods-NetmeraiOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NetmeraiOS-dummy.m"; sourceTree = "<group>"; };
+		5E1F325F802FF92D8D3D8ED795B23B13 /* Pods-NetmeraiOS */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NetmeraiOS"; path = Pods_NetmeraiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60CBDFE1001FDC51CFFB60C668ED203E /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		685348A688CD5273D5A8F88A9C67A792 /* MMWormholeCoordinatedFileTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeCoordinatedFileTransiting.m; path = Source/MMWormholeCoordinatedFileTransiting.m; sourceTree = "<group>"; };
+		6C207DC62B786AFF2D3324869EB37523 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6D054898EF6076261D825743B6E5DB50 /* Pods-NetmeraiOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NetmeraiOS-umbrella.h"; sourceTree = "<group>"; };
+		6D674655BFC824219E6AD2020C6C8E92 /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AFNetworking.modulemap; sourceTree = "<group>"; };
+		70D73498E1B41EC424564B474C5A4EF4 /* MMWormhole-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMWormhole-prefix.pch"; sourceTree = "<group>"; };
+		76DF3E9EFEFB8707F493A5C76B5167DE /* UICKeyChainStore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UICKeyChainStore.modulemap; sourceTree = "<group>"; };
+		775277B9629F2CF9000160D1C00B1EFD /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		7BBDE25AF72D99268B7AD742D4AD7600 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		7DA1DBA954676DE98109AB90D4BA2882 /* UICKeyChainStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICKeyChainStore.release.xcconfig; sourceTree = "<group>"; };
+		7F86B38F7E838E86CBAFDB57A3B81176 /* Pods-MyNetmeraContentExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyNetmeraContentExtension.release.xcconfig"; sourceTree = "<group>"; };
+		80A90F5A83DD8AD72809F1F94F1F9DFF /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		82708851CC82CAFE0BF2AA88E6D96A5B /* MMWormhole.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MMWormhole.modulemap; sourceTree = "<group>"; };
+		83320C4475696D2A413E4D3D93A84FC7 /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFCompatibilityMacros.h; path = AFNetworking/AFCompatibilityMacros.h; sourceTree = "<group>"; };
+		840EC41E6591DAC79AF8C5026B03C438 /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		84BE3E5CA5F2530FB8DC4FAB55C3149E /* Netmera-NotificationContentExtension-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Netmera-NotificationContentExtension-xcframeworks.sh"; sourceTree = "<group>"; };
+		866D3AAC007E10164D1B9DEC873DCF17 /* MMWormholeSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSession.m; path = Source/MMWormholeSession.m; sourceTree = "<group>"; };
+		87BF652894E818FDA6A24FC4D77B1FB3 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		893D4E1D92C9F5DD77A7D141F419267C /* Pods-MyNetmeraContentExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyNetmeraContentExtension-dummy.m"; sourceTree = "<group>"; };
+		8940B459824E8E046B256A280792E65B /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		8A0A749C8261C1488749EDAE9B37359A /* Pods-MyNetmeraNotificationServiceExtension */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MyNetmeraNotificationServiceExtension"; path = Pods_MyNetmeraNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BAA6D53BFFEC4C80208341F981CA840 /* MMWormholeSessionContextTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeSessionContextTransiting.h; path = Source/MMWormholeSessionContextTransiting.h; sourceTree = "<group>"; };
+		8ECF10FA66EBCF51DEE91B1876537F1B /* Netmera-NotificationServiceExtension-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; name = "Netmera-NotificationServiceExtension-xcframeworks.sh"; path = "../Netmera-NotificationServiceExtension/Netmera-NotificationServiceExtension-xcframeworks.sh"; sourceTree = "<group>"; };
+		915591025F5DFCCA941FAE21ECFE7132 /* Pods-MyNetmeraContentExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyNetmeraContentExtension-Info.plist"; sourceTree = "<group>"; };
+		92383360BDA82848D09D230055F19492 /* MMWormhole-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMWormhole-dummy.m"; sourceTree = "<group>"; };
+		94345362E8292C01325DBADBC4E86472 /* FMDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-umbrella.h"; sourceTree = "<group>"; };
+		94D5415440FB57634EC378830578536A /* Pods-MyNetmeraNotificationServiceExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyNetmeraNotificationServiceExtension-dummy.m"; sourceTree = "<group>"; };
+		9902C19738AF7F9A4A7304C3129ED179 /* UICKeyChainStore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICKeyChainStore-umbrella.h"; sourceTree = "<group>"; };
+		9AC5AB264D634CBF979BA8E6788ED617 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		9D18D12738652A30513A111DDF698CA9 /* Pods-NetmeraiOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NetmeraiOS.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0A4D131DB063279AE8AF52001C682FE /* UICKeyChainStore */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UICKeyChainStore; path = UICKeyChainStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0A7AEBB00A858D183B9B9039D724FF5 /* Netmera.default-AdIdSupport-Application.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Netmera.default-AdIdSupport-Application.debug.xcconfig"; path = "../Netmera.default-AdIdSupport-Application/Netmera.default-AdIdSupport-Application.debug.xcconfig"; sourceTree = "<group>"; };
+		A1D4582E4F7B7BA0E0DD203EDA54882B /* FMDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.debug.xcconfig; sourceTree = "<group>"; };
+		A3A80BA70CFB7F75C5391BEBBBA8C9DA /* FMDB */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FMDB; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3FA50FF414069F3E4049E2DAFDD7EC9 /* Netmera-NotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Netmera-NotificationServiceExtension.release.xcconfig"; path = "../Netmera-NotificationServiceExtension/Netmera-NotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E64FFC31400C9874CA754D1DDC9EAE /* Pods-MyNetmeraContentExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MyNetmeraContentExtension.modulemap"; sourceTree = "<group>"; };
+		A823AF847AF85990870668ECCB8C488C /* Pods-NetmeraiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NetmeraiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		AD577F10734051B73972A700B0FCE5B5 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		AF529EED34310FA411269192E83AB461 /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
+		B3D7B9940253FA1A96C4343945CE680E /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		B47A57152728032711613A795BEC6EAF /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		BBF13E6A846226518EC773782BA965DC /* FMDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FMDB.modulemap; sourceTree = "<group>"; };
+		BC9173C5BE78192203D59A988F666303 /* MMWormholeSessionContextTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSessionContextTransiting.m; path = Source/MMWormholeSessionContextTransiting.m; sourceTree = "<group>"; };
+		BD4D87D98A9F23B45A518BD038561EF7 /* Pods-MyNetmeraContentExtension */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MyNetmeraContentExtension"; path = Pods_MyNetmeraContentExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C099D2AA4F6F8F0DDD1FB53BA4E8CE99 /* NetmeraNotificationServiceExtension.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = NetmeraNotificationServiceExtension.xcframework; sourceTree = "<group>"; };
+		C112F1D1FE084FADFBD412F08E330399 /* Pods-MyNetmeraContentExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyNetmeraContentExtension-acknowledgements.plist"; sourceTree = "<group>"; };
+		C12781FA3CDD90D353623F58AAB9BCCC /* UICKeyChainStore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UICKeyChainStore-Info.plist"; sourceTree = "<group>"; };
+		C37A9DDDC15BA496834010D216BEF1A5 /* FMDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.release.xcconfig; sourceTree = "<group>"; };
+		C41F7D71204B083514BBF6C7B1E1F84B /* MMWormholeSessionMessageTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSessionMessageTransiting.m; path = Source/MMWormholeSessionMessageTransiting.m; sourceTree = "<group>"; };
+		C86BF096ADFBBD2BB5ACC6CF3EEE8F08 /* MMWormholeSessionFileTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeSessionFileTransiting.h; path = Source/MMWormholeSessionFileTransiting.h; sourceTree = "<group>"; };
+		C937E9405B78B2F3098A4E66806BF3A5 /* AFNetworking-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AFNetworking-Info.plist"; sourceTree = "<group>"; };
+		CBD90D3071296251184BAAC30858E834 /* Pods-MyNetmeraNotificationServiceExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyNetmeraNotificationServiceExtension-acknowledgements.plist"; sourceTree = "<group>"; };
+		CC0A5C1DA08EBCC6474564EF4E5DD3BE /* NetmeraNotificationContentExtension.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = NetmeraNotificationContentExtension.xcframework; sourceTree = "<group>"; };
+		CC587876B23A0F654B727B5DD792B711 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		CD6CD9EFE5E04B82F9D27BDF0E6AE30A /* AFNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.release.xcconfig; sourceTree = "<group>"; };
+		CDA54012B10B5D6B72728F14B150AF0D /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
+		CE04A96DEDEDF5EB9D56B00FF542EB68 /* AFNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.debug.xcconfig; sourceTree = "<group>"; };
+		D4D9E5D36CE867DEE627DBA9EA11CC22 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		D55A627CE7D371625983DD6E11F18466 /* Pods-NetmeraiOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NetmeraiOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D7C05F84C41596F4A0A98CD1A4337387 /* Pods-NetmeraiOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NetmeraiOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		D9C203AF2F5D868FFFED227C2527287F /* MMWormhole */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MMWormhole; path = MMWormhole.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA62AA300B225279A70D7BDF3A1A9B11 /* MMWormhole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormhole.h; path = Source/MMWormhole.h; sourceTree = "<group>"; };
+		DC0098546928F885ABBC9FA4684C5521 /* UICKeyChainStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UICKeyChainStore.h; path = Lib/UICKeyChainStore/UICKeyChainStore.h; sourceTree = "<group>"; };
+		DD1FDFEE7166088286128A02C0134DEB /* Pods-MyNetmeraNotificationServiceExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyNetmeraNotificationServiceExtension-Info.plist"; sourceTree = "<group>"; };
+		DD8A8296DB6936C3584199433D11555C /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		DF31AC767AD4C7361BD54D120219068C /* UICKeyChainStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UICKeyChainStore.m; path = Lib/UICKeyChainStore/UICKeyChainStore.m; sourceTree = "<group>"; };
+		E8401B8ED16CD5BDEC98F804C1EC7035 /* MMWormhole.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormhole.m; path = Source/MMWormhole.m; sourceTree = "<group>"; };
+		E87FF0DFE38A59B879B4F7512AF03714 /* MMWormhole-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMWormhole-umbrella.h"; sourceTree = "<group>"; };
+		E9D5EADAC7A283F4894E166B7DC0397B /* Netmera-NotificationContentExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Netmera-NotificationContentExtension.release.xcconfig"; sourceTree = "<group>"; };
+		E9EBD433278E3AB5CD524D4E0020A646 /* MMWormhole-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MMWormhole-Info.plist"; sourceTree = "<group>"; };
+		F0A8755DFBAC6363BC5C0EA5F8D88BDE /* Netmera-NotificationContentExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Netmera-NotificationContentExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		F1BC0119B6F5641F9C1C401D52627B26 /* MMWormholeTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeTransiting.h; path = Source/MMWormholeTransiting.h; sourceTree = "<group>"; };
+		F3CD2F3D8ED7475167EE1202CB1D154E /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		F6673853929E78043D4372C833B4B227 /* MMWormholeSessionFileTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSessionFileTransiting.m; path = Source/MMWormholeSessionFileTransiting.m; sourceTree = "<group>"; };
+		FC15E9F99BD776A33ABFCF8A2046ACE5 /* UICKeyChainStore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICKeyChainStore-prefix.pch"; sourceTree = "<group>"; };
+		FDFF15C08602E474539CA7B9CAA1207D /* Pods-NetmeraiOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NetmeraiOS-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10CCB606DC5B551648C3BB8A518431B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DBA048E4393215EB2720A89AC7ADAB0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46CE7976A327A98FA11B937B79401E29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8E9D06DC51EC50FD682E9678F8AE43D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6703FDCC6042E55442F939C92887744E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEC769F2E68ED023B1B1E151E68F9386 /* Foundation.framework in Frameworks */,
+				98115BC6B817E99BB0723648ED089353 /* WatchConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		782D1CB423FEE02E965876AD4ADF5998 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0A56B96FBD402357D913EE17DD69DD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F3C3EAEB72B06648E3AC2625D5EFB30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5A6AC605ED8BBC2B576760BCA72022F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B83A715DC249D13B69029E486E1AC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				077C0927BC236DB8E780A0633B43AEAF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCB29E9F5FFE363219CC12A2A784FF9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFB570CF7637FCB8CC2F9C3B81109AB /* Foundation.framework in Frameworks */,
+				C2E184CEA034F331A8E8EDAE78DEC3B4 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DFB8CC125592B8211B3CA0F22116626 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24C817ACE24C7B72F9491ABE71F11C58 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				3C88D7B1903DD4C746E167D4545C80B2 /* NSURLSession */,
+				2E103C56D633AEBF65B1A2913AA90BCF /* Reachability */,
+				EA31E372F03341F345AD51F2C419453B /* Security */,
+				F9545BBF57C3E4F1146AA321DC3FB5E7 /* Serialization */,
+				BB9AB530659421E64439DC188B16075A /* Support Files */,
+			);
+			name = AFNetworking;
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		274FD4C944AED3D961E319F1269C3532 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBF13E6A846226518EC773782BA965DC /* FMDB.modulemap */,
+				CDA54012B10B5D6B72728F14B150AF0D /* FMDB-dummy.m */,
+				0B30050A4007593DB6466EEC5D47F6D6 /* FMDB-Info.plist */,
+				057D2D133662654CFA1062CF660D0207 /* FMDB-prefix.pch */,
+				94345362E8292C01325DBADBC4E86472 /* FMDB-umbrella.h */,
+				A1D4582E4F7B7BA0E0DD203EDA54882B /* FMDB.debug.xcconfig */,
+				C37A9DDDC15BA496834010D216BEF1A5 /* FMDB.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FMDB";
+			sourceTree = "<group>";
+		};
+		2A70730350A7CD84A5BE6EFB1B2D022D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				36EB336B0BACEA4FACC26F2056262FC4 /* Pods-MyNetmeraContentExtension */,
+				CD785F2277FC24DCC9DAA7D27318EC93 /* Pods-MyNetmeraNotificationServiceExtension */,
+				B9E6CF871B554262F1E799CBFA3E0DF1 /* Pods-NetmeraiOS */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2E103C56D633AEBF65B1A2913AA90BCF /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				D4D9E5D36CE867DEE627DBA9EA11CC22 /* AFNetworkReachabilityManager.h */,
+				87BF652894E818FDA6A24FC4D77B1FB3 /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		322BB980D420B67ABFCAA6FCF9F9186A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				82708851CC82CAFE0BF2AA88E6D96A5B /* MMWormhole.modulemap */,
+				92383360BDA82848D09D230055F19492 /* MMWormhole-dummy.m */,
+				E9EBD433278E3AB5CD524D4E0020A646 /* MMWormhole-Info.plist */,
+				70D73498E1B41EC424564B474C5A4EF4 /* MMWormhole-prefix.pch */,
+				E87FF0DFE38A59B879B4F7512AF03714 /* MMWormhole-umbrella.h */,
+				3160E8541ACDD8A9C7709EDF51969B04 /* MMWormhole.debug.xcconfig */,
+				27370B588198EFB180F0B9A70DBC599C /* MMWormhole.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MMWormhole";
+			sourceTree = "<group>";
+		};
+		36EB336B0BACEA4FACC26F2056262FC4 /* Pods-MyNetmeraContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				A5E64FFC31400C9874CA754D1DDC9EAE /* Pods-MyNetmeraContentExtension.modulemap */,
+				2DDC7E28507C20C449F3FB37701023A0 /* Pods-MyNetmeraContentExtension-acknowledgements.markdown */,
+				C112F1D1FE084FADFBD412F08E330399 /* Pods-MyNetmeraContentExtension-acknowledgements.plist */,
+				893D4E1D92C9F5DD77A7D141F419267C /* Pods-MyNetmeraContentExtension-dummy.m */,
+				915591025F5DFCCA941FAE21ECFE7132 /* Pods-MyNetmeraContentExtension-Info.plist */,
+				288E28F4C118C05CBE210A0662C27BBC /* Pods-MyNetmeraContentExtension-umbrella.h */,
+				2B2608B23EE3F556BEB7DE1F4321AE96 /* Pods-MyNetmeraContentExtension.debug.xcconfig */,
+				7F86B38F7E838E86CBAFDB57A3B81176 /* Pods-MyNetmeraContentExtension.release.xcconfig */,
+			);
+			name = "Pods-MyNetmeraContentExtension";
+			path = "Target Support Files/Pods-MyNetmeraContentExtension";
+			sourceTree = "<group>";
+		};
+		3C88D7B1903DD4C746E167D4545C80B2 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				83320C4475696D2A413E4D3D93A84FC7 /* AFCompatibilityMacros.h */,
+				04142AF56F178B7185D94E4C98977D83 /* AFHTTPSessionManager.h */,
+				80A90F5A83DD8AD72809F1F94F1F9DFF /* AFHTTPSessionManager.m */,
+				2B46E43A5B8E2F2EB476D787B7E72982 /* AFURLSessionManager.h */,
+				34EF61C8E5A0C4A42DC7DC349D9894DA /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		3CC82013B0EF5A2196034DA5E6A8C40D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E7528D841D3712809A73C81183E12A77 /* Frameworks */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		4043CD99B5DF6892EF12A585D84D2B8A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				76DF3E9EFEFB8707F493A5C76B5167DE /* UICKeyChainStore.modulemap */,
+				23F5354D86E2AB019D1B3BA91B334D65 /* UICKeyChainStore-dummy.m */,
+				C12781FA3CDD90D353623F58AAB9BCCC /* UICKeyChainStore-Info.plist */,
+				FC15E9F99BD776A33ABFCF8A2046ACE5 /* UICKeyChainStore-prefix.pch */,
+				9902C19738AF7F9A4A7304C3129ED179 /* UICKeyChainStore-umbrella.h */,
+				15ADEBD29C73B374AC41E2377C99C8BC /* UICKeyChainStore.debug.xcconfig */,
+				7DA1DBA954676DE98109AB90D4BA2882 /* UICKeyChainStore.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UICKeyChainStore";
+			sourceTree = "<group>";
+		};
+		431FED388E12FC88ED9E910A202BF8E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04CD9E128E239AB55E5C87AA6C839266 /* NetmeraAdId.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D004598FC41E7F2000ABE8C01CC8230 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DA62AA300B225279A70D7BDF3A1A9B11 /* MMWormhole.h */,
+				E8401B8ED16CD5BDEC98F804C1EC7035 /* MMWormhole.m */,
+				1D50830B6E9FAA2856CCF3639F10F576 /* MMWormholeCoordinatedFileTransiting.h */,
+				685348A688CD5273D5A8F88A9C67A792 /* MMWormholeCoordinatedFileTransiting.m */,
+				35BF657FCA03D52EEF3955BC89D0EA7A /* MMWormholeFileTransiting.h */,
+				31AB45FEE68E1463435F35A0F4DA7932 /* MMWormholeFileTransiting.m */,
+				13347DE4E94790B6ED0CBF7741689080 /* MMWormholeSession.h */,
+				866D3AAC007E10164D1B9DEC873DCF17 /* MMWormholeSession.m */,
+				8BAA6D53BFFEC4C80208341F981CA840 /* MMWormholeSessionContextTransiting.h */,
+				BC9173C5BE78192203D59A988F666303 /* MMWormholeSessionContextTransiting.m */,
+				C86BF096ADFBBD2BB5ACC6CF3EEE8F08 /* MMWormholeSessionFileTransiting.h */,
+				F6673853929E78043D4372C833B4B227 /* MMWormholeSessionFileTransiting.m */,
+				45777505B7E142352F258377167B863D /* MMWormholeSessionMessageTransiting.h */,
+				C41F7D71204B083514BBF6C7B1E1F84B /* MMWormholeSessionMessageTransiting.m */,
+				F1BC0119B6F5641F9C1C401D52627B26 /* MMWormholeTransiting.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		5D342C3123295385303F9262372EFFD4 /* NotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				610FBA0184D087634C7054B8BF570A93 /* Frameworks */,
+			);
+			name = NotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		5F5D93BE00E8D8F8D5C794C68674A802 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking */,
+				A3A80BA70CFB7F75C5391BEBBBA8C9DA /* FMDB */,
+				D9C203AF2F5D868FFFED227C2527287F /* MMWormhole */,
+				BD4D87D98A9F23B45A518BD038561EF7 /* Pods-MyNetmeraContentExtension */,
+				8A0A749C8261C1488749EDAE9B37359A /* Pods-MyNetmeraNotificationServiceExtension */,
+				5E1F325F802FF92D8D3D8ED795B23B13 /* Pods-NetmeraiOS */,
+				A0A4D131DB063279AE8AF52001C682FE /* UICKeyChainStore */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		610FBA0184D087634C7054B8BF570A93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C099D2AA4F6F8F0DDD1FB53BA4E8CE99 /* NetmeraNotificationServiceExtension.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63652198DC1BB7DC89BA41106170A615 /* MMWormhole */ = {
+			isa = PBXGroup;
+			children = (
+				5D004598FC41E7F2000ABE8C01CC8230 /* Core */,
+				322BB980D420B67ABFCAA6FCF9F9186A /* Support Files */,
+			);
+			name = MMWormhole;
+			path = MMWormhole;
+			sourceTree = "<group>";
+		};
+		6596E3617FED7EB7E4301F45A205F4EB /* Netmera */ = {
+			isa = PBXGroup;
+			children = (
+				74385DA0484212F29F38136B4A077ECC /* AdIdSupport */,
+				3CC82013B0EF5A2196034DA5E6A8C40D /* Application */,
+				C117B15A962AAE5F318027157B6471B8 /* Core */,
+				66F1F7391AF5BC2A38F3E4AE015BEFD5 /* NotificationContentExtension */,
+				5D342C3123295385303F9262372EFFD4 /* NotificationServiceExtension */,
+				73E51F3369A392C44D9A162B741A4D00 /* Support Files */,
+			);
+			name = Netmera;
+			path = Netmera;
+			sourceTree = "<group>";
+		};
+		66F1F7391AF5BC2A38F3E4AE015BEFD5 /* NotificationContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				93E9ABD3C42F94745AC7043F6911AECA /* Frameworks */,
+			);
+			name = NotificationContentExtension;
+			sourceTree = "<group>";
+		};
+		68591914D2537B0B34B23653E87BC494 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23B2EFD1DFA1CA2CCC256D9E77B00C01 /* NetmeraCore.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		73E51F3369A392C44D9A162B741A4D00 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				84BE3E5CA5F2530FB8DC4FAB55C3149E /* Netmera-NotificationContentExtension-xcframeworks.sh */,
+				F0A8755DFBAC6363BC5C0EA5F8D88BDE /* Netmera-NotificationContentExtension.debug.xcconfig */,
+				E9D5EADAC7A283F4894E166B7DC0397B /* Netmera-NotificationContentExtension.release.xcconfig */,
+				8ECF10FA66EBCF51DEE91B1876537F1B /* Netmera-NotificationServiceExtension-xcframeworks.sh */,
+				120D29C7149843A34B63C05511FFA4B3 /* Netmera-NotificationServiceExtension.debug.xcconfig */,
+				A3FA50FF414069F3E4049E2DAFDD7EC9 /* Netmera-NotificationServiceExtension.release.xcconfig */,
+				4BDB4E1529F15F38AE172A78ADC96B7E /* Netmera.default-AdIdSupport-Application-xcframeworks.sh */,
+				A0A7AEBB00A858D183B9B9039D724FF5 /* Netmera.default-AdIdSupport-Application.debug.xcconfig */,
+				13DD680F7C137A236F85941185707ED8 /* Netmera.default-AdIdSupport-Application.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Netmera-NotificationContentExtension";
+			sourceTree = "<group>";
+		};
+		74385DA0484212F29F38136B4A077ECC /* AdIdSupport */ = {
+			isa = PBXGroup;
+			children = (
+				431FED388E12FC88ED9E910A202BF8E1 /* Frameworks */,
+			);
+			name = AdIdSupport;
+			sourceTree = "<group>";
+		};
+		7DFB8CC125592B8211B3CA0F22116626 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6C207DC62B786AFF2D3324869EB37523 /* Foundation.framework */,
+				3428525A34C6F4E20C7B981D501EF9C5 /* Security.framework */,
+				1157BD27767001E137F3B859D549C129 /* WatchConnectivity.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		93E9ABD3C42F94745AC7043F6911AECA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC0A5C1DA08EBCC6474564EF4E5DD3BE /* NetmeraNotificationContentExtension.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B03CFAC9A05600C7E3029A0DB60CF10 /* UICKeyChainStore */ = {
+			isa = PBXGroup;
+			children = (
+				DC0098546928F885ABBC9FA4684C5521 /* UICKeyChainStore.h */,
+				DF31AC767AD4C7361BD54D120219068C /* UICKeyChainStore.m */,
+				4043CD99B5DF6892EF12A585D84D2B8A /* Support Files */,
+			);
+			name = UICKeyChainStore;
+			path = UICKeyChainStore;
+			sourceTree = "<group>";
+		};
+		B9E6CF871B554262F1E799CBFA3E0DF1 /* Pods-NetmeraiOS */ = {
+			isa = PBXGroup;
+			children = (
+				9D18D12738652A30513A111DDF698CA9 /* Pods-NetmeraiOS.modulemap */,
+				D55A627CE7D371625983DD6E11F18466 /* Pods-NetmeraiOS-acknowledgements.markdown */,
+				D7C05F84C41596F4A0A98CD1A4337387 /* Pods-NetmeraiOS-acknowledgements.plist */,
+				51A580DE566A599B2A57B14384C6A1D3 /* Pods-NetmeraiOS-dummy.m */,
+				1B51FA2945AA1C3023835FD0D036A6F0 /* Pods-NetmeraiOS-frameworks.sh */,
+				FDFF15C08602E474539CA7B9CAA1207D /* Pods-NetmeraiOS-Info.plist */,
+				6D054898EF6076261D825743B6E5DB50 /* Pods-NetmeraiOS-umbrella.h */,
+				A823AF847AF85990870668ECCB8C488C /* Pods-NetmeraiOS.debug.xcconfig */,
+				17A3CDD3B9562B801827AC76B761106F /* Pods-NetmeraiOS.release.xcconfig */,
+			);
+			name = "Pods-NetmeraiOS";
+			path = "Target Support Files/Pods-NetmeraiOS";
+			sourceTree = "<group>";
+		};
+		BB9AB530659421E64439DC188B16075A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D674655BFC824219E6AD2020C6C8E92 /* AFNetworking.modulemap */,
+				07C173E59F74309AB50FB0962EC13191 /* AFNetworking-dummy.m */,
+				C937E9405B78B2F3098A4E66806BF3A5 /* AFNetworking-Info.plist */,
+				CC587876B23A0F654B727B5DD792B711 /* AFNetworking-prefix.pch */,
+				1FF017256AE8A3FF38A62A48A33E0D25 /* AFNetworking-umbrella.h */,
+				CE04A96DEDEDF5EB9D56B00FF542EB68 /* AFNetworking.debug.xcconfig */,
+				CD6CD9EFE5E04B82F9D27BDF0E6AE30A /* AFNetworking.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		C117B15A962AAE5F318027157B6471B8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				68591914D2537B0B34B23653E87BC494 /* Frameworks */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		C5BA53E2A5094512D63045490E78BCEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24C817ACE24C7B72F9491ABE71F11C58 /* AFNetworking */,
+				F06188BD5FA8C56135AC13A64F6183EB /* FMDB */,
+				63652198DC1BB7DC89BA41106170A615 /* MMWormhole */,
+				6596E3617FED7EB7E4301F45A205F4EB /* Netmera */,
+				9B03CFAC9A05600C7E3029A0DB60CF10 /* UICKeyChainStore */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD785F2277FC24DCC9DAA7D27318EC93 /* Pods-MyNetmeraNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				501A08007BA1E987512CCB0784225D02 /* Pods-MyNetmeraNotificationServiceExtension.modulemap */,
+				090C4DE575D9CED17649D5E3ABE44A8E /* Pods-MyNetmeraNotificationServiceExtension-acknowledgements.markdown */,
+				CBD90D3071296251184BAAC30858E834 /* Pods-MyNetmeraNotificationServiceExtension-acknowledgements.plist */,
+				94D5415440FB57634EC378830578536A /* Pods-MyNetmeraNotificationServiceExtension-dummy.m */,
+				DD1FDFEE7166088286128A02C0134DEB /* Pods-MyNetmeraNotificationServiceExtension-Info.plist */,
+				0F8EDB08AA9A6E3183394BF02328DF9F /* Pods-MyNetmeraNotificationServiceExtension-umbrella.h */,
+				0BEA8230D9BAC581BAE63B12DFE6FB9E /* Pods-MyNetmeraNotificationServiceExtension.debug.xcconfig */,
+				24AB084D7E73A5F62CBD60D7B8A4CA43 /* Pods-MyNetmeraNotificationServiceExtension.release.xcconfig */,
+			);
+			name = "Pods-MyNetmeraNotificationServiceExtension";
+			path = "Target Support Files/Pods-MyNetmeraNotificationServiceExtension";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				C5BA53E2A5094512D63045490E78BCEB /* Pods */,
+				5F5D93BE00E8D8F8D5C794C68674A802 /* Products */,
+				2A70730350A7CD84A5BE6EFB1B2D022D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E5E6C8A5140F856AD2C1E8DD2F605921 /* standard */ = {
+			isa = PBXGroup;
+			children = (
+				840EC41E6591DAC79AF8C5026B03C438 /* FMDatabase.h */,
+				9AC5AB264D634CBF979BA8E6788ED617 /* FMDatabase.m */,
+				B3D7B9940253FA1A96C4343945CE680E /* FMDatabaseAdditions.h */,
+				4FC989D9C374E51430125B569F265EA8 /* FMDatabaseAdditions.m */,
+				775277B9629F2CF9000160D1C00B1EFD /* FMDatabasePool.h */,
+				DD8A8296DB6936C3584199433D11555C /* FMDatabasePool.m */,
+				8940B459824E8E046B256A280792E65B /* FMDatabaseQueue.h */,
+				23B1266779A0FA34FEDC5F3F7A0496AE /* FMDatabaseQueue.m */,
+				AD577F10734051B73972A700B0FCE5B5 /* FMDB.h */,
+				2FA1A09D59C0C4B69A5812780F55D988 /* FMResultSet.h */,
+				AF529EED34310FA411269192E83AB461 /* FMResultSet.m */,
+			);
+			name = standard;
+			sourceTree = "<group>";
+		};
+		E7528D841D3712809A73C81183E12A77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D878544223D80675362ECD9DD639E96 /* Netmera.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA31E372F03341F345AD51F2C419453B /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				23EA204EE6C500F067F25B3B37C7820C /* AFSecurityPolicy.h */,
+				3B6F5682AEF2CC15EECAA1C187460392 /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		F06188BD5FA8C56135AC13A64F6183EB /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				E5E6C8A5140F856AD2C1E8DD2F605921 /* standard */,
+				274FD4C944AED3D961E319F1269C3532 /* Support Files */,
+			);
+			name = FMDB;
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		F9545BBF57C3E4F1146AA321DC3FB5E7 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD2F3D8ED7475167EE1202CB1D154E /* AFURLRequestSerialization.h */,
+				7BBDE25AF72D99268B7AD742D4AD7600 /* AFURLRequestSerialization.m */,
+				B47A57152728032711613A795BEC6EAF /* AFURLResponseSerialization.h */,
+				60CBDFE1001FDC51CFFB60C668ED203E /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		19A4EACEA780311D24F1C35385DD0DD1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17FB7B7C212BFB8C795C9E8ECB11F92 /* Pods-NetmeraiOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D8E4317C43E801B146629D24251A1E5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3959A6F13D70E595F272F07FB8B00BD /* FMDatabase.h in Headers */,
+				24CA5241C775CE3C9E9DF46D10859EAA /* FMDatabaseAdditions.h in Headers */,
+				58D385B7DBB612B6A3A06EA670C015F1 /* FMDatabasePool.h in Headers */,
+				5F29492846530A428B1198F7A167EA91 /* FMDatabaseQueue.h in Headers */,
+				32B7E25EECD5D8CD154A0F6263A8EB4F /* FMDB.h in Headers */,
+				3EB06038EA8B2F16AA51FF27905876A7 /* FMDB-umbrella.h in Headers */,
+				8246D862087C7890593899AEA5898697 /* FMResultSet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D9F5543E5E5A2092FC183A4D712A2D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E3B686812CF3AD864EEE1C5A3B3228B /* Pods-MyNetmeraContentExtension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3075DC03BB8E1080321AAAE85AF3D822 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D67B8B884C03E2F40DF8D5A6EA28B35 /* UICKeyChainStore.h in Headers */,
+				54C7FF0FF6977C7E9E6B8EAC63AF9712 /* UICKeyChainStore-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3467266502C728982B023FE5C2A43841 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12342B7665D8F0E5C8E4142FBC7CE69 /* MMWormhole.h in Headers */,
+				D05E2424317DDE6F2C47C7A171394CDB /* MMWormhole-umbrella.h in Headers */,
+				802847C45D827FDC0AC71A91C6B4F76C /* MMWormholeCoordinatedFileTransiting.h in Headers */,
+				3A8289DD1509BF5086A0381D7BE5DCD0 /* MMWormholeFileTransiting.h in Headers */,
+				DEE40D70752AFFE77E738C1459DB990C /* MMWormholeSession.h in Headers */,
+				A275AF26282712C0EE744A90F9CA52C7 /* MMWormholeSessionContextTransiting.h in Headers */,
+				10DC2E761FD8240755CB4D44AD848B3C /* MMWormholeSessionFileTransiting.h in Headers */,
+				61A1136637848E05B3CF71EAD63F0487 /* MMWormholeSessionMessageTransiting.h in Headers */,
+				1E82F834D1867575327C749E304E5717 /* MMWormholeTransiting.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78540745AB0CFB7ED45561B785613E53 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E025BA6BFD719C33ACC54F5100425721 /* AFCompatibilityMacros.h in Headers */,
+				9932149C6B9001A8A4D73D50F682E35A /* AFHTTPSessionManager.h in Headers */,
+				B581E514917B38AA7D828E1C108FFC59 /* AFNetworking-umbrella.h in Headers */,
+				3D95C188F70F7891301A933272D946AB /* AFNetworkReachabilityManager.h in Headers */,
+				50E8F0C3B35A252B0AADD9B3DD88603F /* AFSecurityPolicy.h in Headers */,
+				0BA5E63724842DB3DC18163244FAA9DC /* AFURLRequestSerialization.h in Headers */,
+				B69B9F0498E101358AA636FB3C9DE1FF /* AFURLResponseSerialization.h in Headers */,
+				2A1794D99E095EBCAFF11F5F4DA888A2 /* AFURLSessionManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B565FFDF81821BA957F75740AE952355 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				512DE25F9DA68F9DACDF62D66C64DE28 /* Pods-MyNetmeraNotificationServiceExtension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F60027E31A7444922D657895F596AD76 /* Build configuration list for PBXNativeTarget "AFNetworking" */;
+			buildPhases = (
+				78540745AB0CFB7ED45561B785613E53 /* Headers */,
+				82435DBFB5F14504AA45AA0EC5194794 /* Sources */,
+				83B83A715DC249D13B69029E486E1AC2 /* Frameworks */,
+				EBB91F85A58B19DA8D2FC189583DEBF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFNetworking;
+			productName = AFNetworking;
+			productReference = A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking */;
+			productType = "com.apple.product-type.framework";
+		};
+		6F561A5B1DACA00CA5BD533C7E1FB002 /* Pods-NetmeraiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4CFC2149F1D7BCEDA15BF285771C27A /* Build configuration list for PBXNativeTarget "Pods-NetmeraiOS" */;
+			buildPhases = (
+				19A4EACEA780311D24F1C35385DD0DD1 /* Headers */,
+				26B6452EA157643E0FFE614D56A079B1 /* Sources */,
+				7F3C3EAEB72B06648E3AC2625D5EFB30 /* Frameworks */,
+				8B50DD26EDAF8FDD257335C7B9AC6CC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DEF04C68BD30AEE2657B85F1CA34D6D /* PBXTargetDependency */,
+				6ADF72D5240867E9E6D202D5AD574275 /* PBXTargetDependency */,
+				00286815BA4B97E6A05366AE1AB62387 /* PBXTargetDependency */,
+				326D58896CD9168AFD2518E7945A93D4 /* PBXTargetDependency */,
+				C7006432441619EF7191252A9219FB90 /* PBXTargetDependency */,
+				6D49594BB7DD997EF66143D4B1E8C6EF /* PBXTargetDependency */,
+				96FEB89C503F7111A8EAF65265287B10 /* PBXTargetDependency */,
+			);
+			name = "Pods-NetmeraiOS";
+			productName = Pods_NetmeraiOS;
+			productReference = 5E1F325F802FF92D8D3D8ED795B23B13 /* Pods-NetmeraiOS */;
+			productType = "com.apple.product-type.framework";
+		};
+		7406ECC476A62C8FA502AD0E8D1240BE /* UICKeyChainStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C49F0E9A5D994EC49F6844740959789F /* Build configuration list for PBXNativeTarget "UICKeyChainStore" */;
+			buildPhases = (
+				3075DC03BB8E1080321AAAE85AF3D822 /* Headers */,
+				39B8D75F1C618C0ED4D7637EFE297F4A /* Sources */,
+				FCB29E9F5FFE363219CC12A2A784FF9B /* Frameworks */,
+				947FDA83710C062B01BC16DCEB55310C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UICKeyChainStore;
+			productName = UICKeyChainStore;
+			productReference = A0A4D131DB063279AE8AF52001C682FE /* UICKeyChainStore */;
+			productType = "com.apple.product-type.framework";
+		};
+		7DB9034BAF87B3C8E77786D41579413B /* Pods-MyNetmeraNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0045B58866DFBABCC0032C8CC1A1F09D /* Build configuration list for PBXNativeTarget "Pods-MyNetmeraNotificationServiceExtension" */;
+			buildPhases = (
+				B565FFDF81821BA957F75740AE952355 /* Headers */,
+				8FEB0DCD26CDB43A31F64F8C82FE7B39 /* Sources */,
+				782D1CB423FEE02E965876AD4ADF5998 /* Frameworks */,
+				655783B1400113A8FE3314DCAD973A62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C69E2F55174C07D29A444345E734212 /* PBXTargetDependency */,
+			);
+			name = "Pods-MyNetmeraNotificationServiceExtension";
+			productName = Pods_MyNetmeraNotificationServiceExtension;
+			productReference = 8A0A749C8261C1488749EDAE9B37359A /* Pods-MyNetmeraNotificationServiceExtension */;
+			productType = "com.apple.product-type.framework";
+		};
+		8592E0E389D40AC17881400ADC67ABC0 /* FMDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69FA85BFF587E84927EC6224938E617F /* Build configuration list for PBXNativeTarget "FMDB" */;
+			buildPhases = (
+				1D8E4317C43E801B146629D24251A1E5 /* Headers */,
+				4A16EBB77E9792704EF119C3C0F5FF30 /* Sources */,
+				46CE7976A327A98FA11B937B79401E29 /* Frameworks */,
+				391A0FAA8EEAFC4A6C713A0DC407ABB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMDB;
+			productName = FMDB;
+			productReference = A3A80BA70CFB7F75C5391BEBBBA8C9DA /* FMDB */;
+			productType = "com.apple.product-type.framework";
+		};
+		E37C8494356B2F3F48E654AC46CD6824 /* MMWormhole */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DEA17F029724C1CB833C94BE4BE7569 /* Build configuration list for PBXNativeTarget "MMWormhole" */;
+			buildPhases = (
+				3467266502C728982B023FE5C2A43841 /* Headers */,
+				DD7AF75964F686323DCFD0548A939186 /* Sources */,
+				6703FDCC6042E55442F939C92887744E /* Frameworks */,
+				9AC1EDC7BF35834401C96AD11BAA4282 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMWormhole;
+			productName = MMWormhole;
+			productReference = D9C203AF2F5D868FFFED227C2527287F /* MMWormhole */;
+			productType = "com.apple.product-type.framework";
+		};
+		F2C91557A64BBCF352486C77D7571D08 /* Pods-MyNetmeraContentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C354D2A6DD571A0B7C9A1B14F545D57 /* Build configuration list for PBXNativeTarget "Pods-MyNetmeraContentExtension" */;
+			buildPhases = (
+				2D9F5543E5E5A2092FC183A4D712A2D5 /* Headers */,
+				D6E34BC3E61517C3DA82E1DC90E82178 /* Sources */,
+				10CCB606DC5B551648C3BB8A518431B6 /* Frameworks */,
+				403DC69C9C0377B63FC4B7071EFB74C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C971E8B9ABE55C6CE39333044CB35BEC /* PBXTargetDependency */,
+				A67E8A47472EB494F259EB6D0C5CFC23 /* PBXTargetDependency */,
+			);
+			name = "Pods-MyNetmeraContentExtension";
+			productName = Pods_MyNetmeraContentExtension;
+			productReference = BD4D87D98A9F23B45A518BD038561EF7 /* Pods-MyNetmeraContentExtension */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 5F5D93BE00E8D8F8D5C794C68674A802 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */,
+				8592E0E389D40AC17881400ADC67ABC0 /* FMDB */,
+				E37C8494356B2F3F48E654AC46CD6824 /* MMWormhole */,
+				30AA99B82B78581E0A4BA86433BDA11D /* Netmera-NotificationContentExtension */,
+				AA9097157A0758E208105E2481988CBB /* Netmera-NotificationServiceExtension */,
+				DA9DC677E1F077B945DAEBF7A8BFCF27 /* Netmera.default-AdIdSupport-Application */,
+				F2C91557A64BBCF352486C77D7571D08 /* Pods-MyNetmeraContentExtension */,
+				7DB9034BAF87B3C8E77786D41579413B /* Pods-MyNetmeraNotificationServiceExtension */,
+				6F561A5B1DACA00CA5BD533C7E1FB002 /* Pods-NetmeraiOS */,
+				7406ECC476A62C8FA502AD0E8D1240BE /* UICKeyChainStore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		391A0FAA8EEAFC4A6C713A0DC407ABB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		403DC69C9C0377B63FC4B7071EFB74C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		655783B1400113A8FE3314DCAD973A62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B50DD26EDAF8FDD257335C7B9AC6CC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		947FDA83710C062B01BC16DCEB55310C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AC1EDC7BF35834401C96AD11BAA4282 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB91F85A58B19DA8D2FC189583DEBF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F73288840898C1B40317AFFD854C681 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Netmera.default-AdIdSupport-Application/Netmera.default-AdIdSupport-Application-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Netmera.default-AdIdSupport-Application/Netmera.default-AdIdSupport-Application-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Netmera.default-AdIdSupport-Application/Netmera.default-AdIdSupport-Application-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D53047FFE3D3085CE668D64C92A920A4 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Netmera-NotificationContentExtension/Netmera-NotificationContentExtension-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Netmera-NotificationContentExtension/Netmera-NotificationContentExtension-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Netmera-NotificationContentExtension/Netmera-NotificationContentExtension-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F20DA5DB41637FDE4B3FFA6D25852947 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Netmera-NotificationServiceExtension/Netmera-NotificationServiceExtension-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Netmera-NotificationServiceExtension/Netmera-NotificationServiceExtension-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Netmera-NotificationServiceExtension/Netmera-NotificationServiceExtension-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26B6452EA157643E0FFE614D56A079B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A04CBBDB395C07ADA7AA086722A044C /* Pods-NetmeraiOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39B8D75F1C618C0ED4D7637EFE297F4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F16C671DF9A50B2DB970244B51C22DAD /* UICKeyChainStore.m in Sources */,
+				E4B105C092E6057E5125364DEFD27344 /* UICKeyChainStore-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A16EBB77E9792704EF119C3C0F5FF30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4585CF5705D4E00C8B158BE074FA1BF6 /* FMDatabase.m in Sources */,
+				EFBCD5F499464C4A8042EBCFAB4ACC1A /* FMDatabaseAdditions.m in Sources */,
+				73C10CDFEAC1F11878A7B3AD41B9907C /* FMDatabasePool.m in Sources */,
+				77BFEC0CB11BC106F2C8251E2E5D8578 /* FMDatabaseQueue.m in Sources */,
+				176F8093A462DA87177AE2DC38C74F3A /* FMDB-dummy.m in Sources */,
+				8FC5684C4684961A4B867842E66D7798 /* FMResultSet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82435DBFB5F14504AA45AA0EC5194794 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07244C2EC82FF1901C6EE8163C2D3BBB /* AFHTTPSessionManager.m in Sources */,
+				84C4AB9335E17FF66B11A4AF950EFDDF /* AFNetworking-dummy.m in Sources */,
+				9E2298CE217BFD2BC214B2A23996A792 /* AFNetworkReachabilityManager.m in Sources */,
+				C86538A68F0BBD857A7033C12BB4ECBC /* AFSecurityPolicy.m in Sources */,
+				5DB24234F3E84F7DD0AF80D84E43DF63 /* AFURLRequestSerialization.m in Sources */,
+				E05884CFA6BF7E1F20BE3EA4BF9D6EF2 /* AFURLResponseSerialization.m in Sources */,
+				D2254DA384ACC0F97A2E34EE76CC6CCB /* AFURLSessionManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FEB0DCD26CDB43A31F64F8C82FE7B39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D820795BCA0F0F2013C614D61CF76699 /* Pods-MyNetmeraNotificationServiceExtension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6E34BC3E61517C3DA82E1DC90E82178 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D10DE887260B50F9E14120146CB52CE /* Pods-MyNetmeraContentExtension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7AF75964F686323DCFD0548A939186 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80C0803B7CCF495A4D2D32BAE6911EB0 /* MMWormhole.m in Sources */,
+				8FA59698D8E0940C6A785C92D2325664 /* MMWormhole-dummy.m in Sources */,
+				CD3B4CEE42DB4A796155E9B1E22FECCB /* MMWormholeCoordinatedFileTransiting.m in Sources */,
+				02DAE095E43D598F39C00701E62CA242 /* MMWormholeFileTransiting.m in Sources */,
+				BCF966A242F1A37245EB58A12267EEC8 /* MMWormholeSession.m in Sources */,
+				0876EF674D2AC9EB649D15765CACF38A /* MMWormholeSessionContextTransiting.m in Sources */,
+				321740FBD1C89969CA16BD264D6D1FDD /* MMWormholeSessionFileTransiting.m in Sources */,
+				145EAECCCD3637C051D305ED3B87967C /* MMWormholeSessionMessageTransiting.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00286815BA4B97E6A05366AE1AB62387 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMWormhole;
+			target = E37C8494356B2F3F48E654AC46CD6824 /* MMWormhole */;
+			targetProxy = 5941F7CAC04684627072E13282978CDE /* PBXContainerItemProxy */;
+		};
+		01479572256CF10A45955BD65552FA54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UICKeyChainStore;
+			target = 7406ECC476A62C8FA502AD0E8D1240BE /* UICKeyChainStore */;
+			targetProxy = 5D38EEB0A3C1D0C1D8F0562C7A266EAD /* PBXContainerItemProxy */;
+		};
+		31228CFE8A2817305C879F2DB72A4DD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDB;
+			target = 8592E0E389D40AC17881400ADC67ABC0 /* FMDB */;
+			targetProxy = F78B1734790BA5FBD31A609C5A51744A /* PBXContainerItemProxy */;
+		};
+		326D58896CD9168AFD2518E7945A93D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Netmera-NotificationContentExtension";
+			target = 30AA99B82B78581E0A4BA86433BDA11D /* Netmera-NotificationContentExtension */;
+			targetProxy = 4D5FDE3ED287FE8F34AA1D39A68FB651 /* PBXContainerItemProxy */;
+		};
+		6ADF72D5240867E9E6D202D5AD574275 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDB;
+			target = 8592E0E389D40AC17881400ADC67ABC0 /* FMDB */;
+			targetProxy = 2B2D0657CC0E9D08E36DA1C036A85711 /* PBXContainerItemProxy */;
+		};
+		6C69E2F55174C07D29A444345E734212 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Netmera-NotificationServiceExtension";
+			target = AA9097157A0758E208105E2481988CBB /* Netmera-NotificationServiceExtension */;
+			targetProxy = 06D864B928EA4125EA6F96408897E468 /* PBXContainerItemProxy */;
+		};
+		6D49594BB7DD997EF66143D4B1E8C6EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Netmera.default-AdIdSupport-Application";
+			target = DA9DC677E1F077B945DAEBF7A8BFCF27 /* Netmera.default-AdIdSupport-Application */;
+			targetProxy = 1281D869E17D6E248C1011E3A738823A /* PBXContainerItemProxy */;
+		};
+		7DEF04C68BD30AEE2657B85F1CA34D6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
+			targetProxy = A5C40DEE1AB95B7A32B0CA45C43B65B4 /* PBXContainerItemProxy */;
+		};
+		808B8B4B302D82EAFD1147236170DEBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMWormhole;
+			target = E37C8494356B2F3F48E654AC46CD6824 /* MMWormhole */;
+			targetProxy = F6E859F016134F4D9920CD41522A7AFB /* PBXContainerItemProxy */;
+		};
+		96FEB89C503F7111A8EAF65265287B10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UICKeyChainStore;
+			target = 7406ECC476A62C8FA502AD0E8D1240BE /* UICKeyChainStore */;
+			targetProxy = 24EF0C8DE09FC2B6946E60D529181E57 /* PBXContainerItemProxy */;
+		};
+		9F723C02644D488DB1EE16D5F04B3983 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMWormhole;
+			target = E37C8494356B2F3F48E654AC46CD6824 /* MMWormhole */;
+			targetProxy = DB0A7D7DF42AC6E24688DD5A46CBF6E6 /* PBXContainerItemProxy */;
+		};
+		A67E8A47472EB494F259EB6D0C5CFC23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Netmera-NotificationContentExtension";
+			target = 30AA99B82B78581E0A4BA86433BDA11D /* Netmera-NotificationContentExtension */;
+			targetProxy = E3D2400B709D1982D7B86E9C1BDEFEC1 /* PBXContainerItemProxy */;
+		};
+		C7006432441619EF7191252A9219FB90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Netmera-NotificationServiceExtension";
+			target = AA9097157A0758E208105E2481988CBB /* Netmera-NotificationServiceExtension */;
+			targetProxy = C5BEDE264E5B1F6A4CC841338E684E50 /* PBXContainerItemProxy */;
+		};
+		C971E8B9ABE55C6CE39333044CB35BEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMWormhole;
+			target = E37C8494356B2F3F48E654AC46CD6824 /* MMWormhole */;
+			targetProxy = E50BB9505FA7E6AED9CF5AEB13A1127F /* PBXContainerItemProxy */;
+		};
+		F66E4AB9D6CABB6AE09E9FF598C0C0DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
+			targetProxy = C5BDB5ADEA6FB263C80C8B72C2C1BCC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04C0115C6961D7AEB39B5477521E0814 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD6CD9EFE5E04B82F9D27BDF0E6AE30A /* AFNetworking.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/AFNetworking-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
+				PRODUCT_MODULE_NAME = AFNetworking;
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1360ED1AD1884BE73B3314E27EABAD8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27370B588198EFB180F0B9A70DBC599C /* MMWormhole.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MMWormhole/MMWormhole-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMWormhole/MMWormhole-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MMWormhole/MMWormhole.modulemap";
+				PRODUCT_MODULE_NAME = MMWormhole;
+				PRODUCT_NAME = MMWormhole;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2790D815DA0AB1A7AC8F62F1383C4FEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A823AF847AF85990870668ECCB8C488C /* Pods-NetmeraiOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NetmeraiOS/Pods-NetmeraiOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NetmeraiOS/Pods-NetmeraiOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2C4E76F5A7742612C8587188ED14D03E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9D5EADAC7A283F4894E166B7DC0397B /* Netmera-NotificationContentExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F0FC8E43EA87889911F74D1F449C37A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1D4582E4F7B7BA0E0DD203EDA54882B /* FMDB.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMDB/FMDB-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FMDB/FMDB.modulemap";
+				PRODUCT_MODULE_NAME = FMDB;
+				PRODUCT_NAME = FMDB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		309094DCC1DDE6B4E11378A48D9BD0B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0A7AEBB00A858D183B9B9039D724FF5 /* Netmera.default-AdIdSupport-Application.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4214E6946993DF02ED98D89047C64016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		42354FCDDC1A6814313CD274AB5EE96D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0A8755DFBAC6363BC5C0EA5F8D88BDE /* Netmera-NotificationContentExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4581CE0DEBCE8CE1EF5DEE045C10C7DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DA1DBA954676DE98109AB90D4BA2882 /* UICKeyChainStore.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UICKeyChainStore/UICKeyChainStore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UICKeyChainStore/UICKeyChainStore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UICKeyChainStore/UICKeyChainStore.modulemap";
+				PRODUCT_MODULE_NAME = UICKeyChainStore;
+				PRODUCT_NAME = UICKeyChainStore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4A5BBB4EA61DDCCDB9B7CA5E84258087 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3160E8541ACDD8A9C7709EDF51969B04 /* MMWormhole.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MMWormhole/MMWormhole-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMWormhole/MMWormhole-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MMWormhole/MMWormhole.modulemap";
+				PRODUCT_MODULE_NAME = MMWormhole;
+				PRODUCT_NAME = MMWormhole;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		579D9614965503AB55C218248006D20B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15ADEBD29C73B374AC41E2377C99C8BC /* UICKeyChainStore.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UICKeyChainStore/UICKeyChainStore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UICKeyChainStore/UICKeyChainStore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UICKeyChainStore/UICKeyChainStore.modulemap";
+				PRODUCT_MODULE_NAME = UICKeyChainStore;
+				PRODUCT_NAME = UICKeyChainStore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5FC401D69356DAD9784AD6B6D93F9FFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C37A9DDDC15BA496834010D216BEF1A5 /* FMDB.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMDB/FMDB-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FMDB/FMDB.modulemap";
+				PRODUCT_MODULE_NAME = FMDB;
+				PRODUCT_NAME = FMDB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6F2AB0638A034B3508EB6012E7DC56C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24AB084D7E73A5F62CBD60D7B8A4CA43 /* Pods-MyNetmeraNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyNetmeraNotificationServiceExtension/Pods-MyNetmeraNotificationServiceExtension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyNetmeraNotificationServiceExtension/Pods-MyNetmeraNotificationServiceExtension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7BE57BA0FE111D3102F7623638B06615 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 120D29C7149843A34B63C05511FFA4B3 /* Netmera-NotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A694D27F58CB8010D7DDC079E095082E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B2608B23EE3F556BEB7DE1F4321AE96 /* Pods-MyNetmeraContentExtension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyNetmeraContentExtension/Pods-MyNetmeraContentExtension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyNetmeraContentExtension/Pods-MyNetmeraContentExtension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE3846CE754FE244768E4C2DF6E2DBE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17A3CDD3B9562B801827AC76B761106F /* Pods-NetmeraiOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NetmeraiOS/Pods-NetmeraiOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NetmeraiOS/Pods-NetmeraiOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AFA42999C2C9DB438536FA378801B692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3FA50FF414069F3E4049E2DAFDD7EC9 /* Netmera-NotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B85E53FDB0442A60B95488F2352DD3E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE04A96DEDEDF5EB9D56B00FF542EB68 /* AFNetworking.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/AFNetworking-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
+				PRODUCT_MODULE_NAME = AFNetworking;
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CD85FD90473CFBE797E4264E7BBC70AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		DE52B0194BD86CD55010B21C83908E88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F86B38F7E838E86CBAFDB57A3B81176 /* Pods-MyNetmeraContentExtension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyNetmeraContentExtension/Pods-MyNetmeraContentExtension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyNetmeraContentExtension/Pods-MyNetmeraContentExtension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ECDED3623A58C9C23EBC797605209D2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13DD680F7C137A236F85941185707ED8 /* Netmera.default-AdIdSupport-Application.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDC02876E3EA49129414070EB8A93894 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BEA8230D9BAC581BAE63B12DFE6FB9E /* Pods-MyNetmeraNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyNetmeraNotificationServiceExtension/Pods-MyNetmeraNotificationServiceExtension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyNetmeraNotificationServiceExtension/Pods-MyNetmeraNotificationServiceExtension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000CB9DB05CDFB02EA7E967FEA2F882F /* Build configuration list for PBXAggregateTarget "Netmera.default-AdIdSupport-Application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				309094DCC1DDE6B4E11378A48D9BD0B7 /* Debug */,
+				ECDED3623A58C9C23EBC797605209D2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0045B58866DFBABCC0032C8CC1A1F09D /* Build configuration list for PBXNativeTarget "Pods-MyNetmeraNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC02876E3EA49129414070EB8A93894 /* Debug */,
+				6F2AB0638A034B3508EB6012E7DC56C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C354D2A6DD571A0B7C9A1B14F545D57 /* Build configuration list for PBXNativeTarget "Pods-MyNetmeraContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A694D27F58CB8010D7DDC079E095082E /* Debug */,
+				DE52B0194BD86CD55010B21C83908E88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DEA17F029724C1CB833C94BE4BE7569 /* Build configuration list for PBXNativeTarget "MMWormhole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A5BBB4EA61DDCCDB9B7CA5E84258087 /* Debug */,
+				1360ED1AD1884BE73B3314E27EABAD8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4214E6946993DF02ED98D89047C64016 /* Debug */,
+				CD85FD90473CFBE797E4264E7BBC70AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69FA85BFF587E84927EC6224938E617F /* Build configuration list for PBXNativeTarget "FMDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F0FC8E43EA87889911F74D1F449C37A /* Debug */,
+				5FC401D69356DAD9784AD6B6D93F9FFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C49F0E9A5D994EC49F6844740959789F /* Build configuration list for PBXNativeTarget "UICKeyChainStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				579D9614965503AB55C218248006D20B /* Debug */,
+				4581CE0DEBCE8CE1EF5DEE045C10C7DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC62FEB83A62AA108272AA072EFD477D /* Build configuration list for PBXAggregateTarget "Netmera-NotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BE57BA0FE111D3102F7623638B06615 /* Debug */,
+				AFA42999C2C9DB438536FA378801B692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFD9637E4D5780674A31E0175FD1613D /* Build configuration list for PBXAggregateTarget "Netmera-NotificationContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42354FCDDC1A6814313CD274AB5EE96D /* Debug */,
+				2C4E76F5A7742612C8587188ED14D03E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4CFC2149F1D7BCEDA15BF285771C27A /* Build configuration list for PBXNativeTarget "Pods-NetmeraiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2790D815DA0AB1A7AC8F62F1383C4FEE /* Debug */,
+				AE3846CE754FE244768E4C2DF6E2DBE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F60027E31A7444922D657895F596AD76 /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B85E53FDB0442A60B95488F2352DD3E1 /* Debug */,
+				04C0115C6961D7AEB39B5477521E0814 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
