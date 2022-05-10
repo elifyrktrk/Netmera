@@ -28,6 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         Netmera.setAppGroupName("group.com.netmera.NetmeraiOS")
         Netmera.requestPushNotificationAuthorization(forTypes: [.alert, .sound, .badge])
         Netmera.setLogLevel(NetmeraLogLevel.debug)
+        Netmera.setEnabledPopupPresentation(true)
+  
         return true
     }
   
