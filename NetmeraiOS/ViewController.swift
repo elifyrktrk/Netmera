@@ -14,8 +14,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         // Call this method with needed notification types
         
-        Netmera.setEnabledPopupPresentation(true)
-  
+        
         
         let user = MyNetmeraUser()
         user.userId = "elift"
