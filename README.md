@@ -6,15 +6,6 @@
   <img src="https://www.netmera.com/wp-content/uploads/2019/10/netmera_logo-1.png"/>
 </p>
 
-## Netmera iOS SDK
-[![Version](https://img.shields.io/cocoapods/v/Netmera.svg?style=flat)](https://cocoapods.org/pods/Netmera)
-[![Platform](https://img.shields.io/cocoapods/p/Netmera.svg?style=flat)](https://cocoapods.org/pods/Netmera)
-[![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
-[![License](https://img.shields.io/cocoapods/l/Netmera.svg?style=flat)](https://cocoapods.org/pods/Netmera)
----
-
-[Netmera](https://www.netmera.com) iOS SDK for Netmera mobile app engagement platform
-
 Know & understand your app users, send them targeted push notification & popup campaigns, and analyze results with Netmera! Netmera iOS SDK provides you set of tools to work seamlessly with Netmera User Engagement platform. For details, please see https://developer.netmera.com
 
 
@@ -27,7 +18,7 @@ Netmera will be compatible with the lastest public release of Swift.
 * iOS 9.0+
 * Xcode 11.0+
  
-Analytics is available through [CocoaPods](http://cocoapods.org) and [Carthage](https://github.com/Carthage/Carthage).
+Analytics is available through [CocoaPods](http://cocoapods.org) 
 
 ### CocoaPods
 
@@ -52,17 +43,6 @@ For Without AdId Support
 pod 'Netmera/NetmeraWithoutAdId'
 ```
 
-### Swift Package Manager(SPM)
-
-In Xcode, select File > Add Packages..
-
-Enter the package URL for this repository https://github.com/Netmera/netmera-ios.git.
-
-### Carthage
-// TODO: Feature
-
-### API
-See Netmera's [iOS SDK API](https://developer.netmera.com/en/IOS/Quick-Start)
 
 #### Usage
 in Swift
