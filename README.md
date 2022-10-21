@@ -2,9 +2,6 @@
 
 > You can quickly complete the integration by watching the our [*iOS Integration Video*](https://drive.google.com/file/d/1Gow03U6U-iudmLUDQb1FnC1VSQnGl-kS/view?usp=sharing)
 
-<p align="center">
-  <img src="https://www.netmera.com/wp-content/uploads/2019/10/netmera_logo-1.png"/>
-</p>
 
 Know & understand your app users, send them targeted push notification & popup campaigns, and analyze results with Netmera! Netmera iOS SDK provides you set of tools to work seamlessly with Netmera User Engagement platform. For details, please see https://developer.netmera.com
 
